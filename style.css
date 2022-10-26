@@ -79,6 +79,10 @@ main{
     margin: 0.5rem 4rem;
 }
 
+.section_left .line, .section_right .line, footer .line{
+    display: none;
+}
+
 .section_left{
     width: 50%;
     display: flex;
@@ -164,4 +168,71 @@ a:hover{
 .school{
     margin: 0;
     
+}
+
+/*     ------  Media Queries  -----     */
+
+@media (max-width: 700px)
+{
+main{
+    display: grid;
+}
+.section_left, .section_right{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+}
+ul{
+    margin: 0;
+}
+li{
+    display: block;
+    margin: 0 0.5rem;
+}
+h3{
+    margin: 0.5rem;
+}
+li>img{
+    display: none;
+}
+
+footer{
+    margin: 0 4rem 2rem;
+    border-top: 0;
+}
+
+.line{
+    display: none;
+}
+
+.section_left .line, .section_right .line, footer .line{
+    display: block;
+}
+
+.section_left{
+    order: 2;
+}
+.section_right{
+    order: 1;
+}
+
+}
+
+@media (max-width: 1000px)
+{
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .pencil{
+        display: none;
+    }
+    p{
+        margin-top: 0;
+    }
 }
