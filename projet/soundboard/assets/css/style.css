@@ -11,10 +11,6 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 /*
   Theme
 */
@@ -25,24 +21,24 @@ html {
 }
 
 body {
-  color-scheme: dark;
+  height: 100vh;
   background-color: #0d1117;
   color: #c9d1d9;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 @media screen and (orientation: landscape) {
 /*
   Components
 */
 .container{
-  display: flex;
-  flex-direction: column;
+ height: 55%;
+ width: 85%;
+ margin: auto;
 }
 
 .pads {
-  height: 100%;
+  
   display: flex;
   margin: auto;
 }
@@ -108,6 +104,11 @@ p{
 }
 
 @media screen and (orientation: portrait) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .container{
     display: none;
   }

@@ -394,33 +394,33 @@ const soundboard = {
   * Méthode permettant d'ajouter la class active à chaque pad lorsque le pavé tactile est enfoncé
   */
   handleTouchStart: function(event) {
-    if(event.key === soundboard.kickElement) {soundboard.kickElement.click();soundboard.kickElement.classList.add('active');}
-    if(event.key === soundboard.hihatElement) {soundboard.hihatElement.click();soundboard.hihatElement.classList.add('active');}
-    if(event.key === soundboard.snareElement) {soundboard.snareElement.click();soundboard.snareElement.classList.add('active');}
-    if(event.key === soundboard.wobbleElement) {soundboard.wobbleElement.click();soundboard.wobbleElement.classList.add('active');}
-    if(event.key === soundboard.vocalElement) {soundboard.vocalElement.click();soundboard.vocalElement.classList.add('active');}
-    if(event.key === soundboard.scratchElement) {soundboard.scratchElement.click();soundboard.scratchElement.classList.add('active');}
-    if(event.key === soundboard.grenadeElement) {soundboard.grenadeElement.click();soundboard.grenadeElement.classList.add('active');}
-    if(event.key === soundboard.violonElement) {soundboard.violonElement.click();soundboard.violonElement.classList.add('active');}
-    if(event.key === soundboard.triangleElement) {soundboard.triangleElement.click();soundboard.triangleElement.classList.add('active');}
-    if(event.key === soundboard.saxophoneElement) {soundboard.saxophoneElement.click();soundboard.saxophoneElement.classList.add('active');}
-    if(event.key === soundboard.tambourElement) {soundboard.tambourElement.click();soundboard.tambourElement.classList.add('active');}
-    if(event.key === soundboard.clapElement) {soundboard.clapElement.click();soundboard.clapElement.classList.add('active');}
-    if(event.key === soundboard.fluteElement) {soundboard.fluteElement.click();soundboard.fluteElement.classList.add('active');}
-    if(event.key === soundboard.aigleElement) {soundboard.aigleElement.click();soundboard.aigleElement.classList.add('active');}
-    if(event.key === soundboard.rotElement) {soundboard.rotElement.click();soundboard.rotElement.classList.add('active');}
-    if(event.key === soundboard.sifflementElement) {soundboard.sifflementElement.click();soundboard.sifflementElement.classList.add('active');}
-    if(event.key === soundboard.cornemuseElement) {soundboard.cornemuseElement.click();soundboard.cornemuseElement.classList.add('active');}
-    if(event.key === soundboard.rythmeElement) {soundboard.rythmeElement.click();soundboard.rythmeElement.classList.add('active');}
-    if(event.key === soundboard.castagnetteElement) {soundboard.castagnetteElement.click();soundboard.castagnetteElement.classList.add('active');}
-    if(event.key === soundboard.ukuleleElement) {soundboard.ukuleleElement.click();soundboard.ukuleleElement.classList.add('active');}
-    if(event.key === soundboard.alarmeElement) {soundboard.alarmeElement.click();soundboard.alarmeElement.classList.add('active');}
-    if(event.key === soundboard.applaudissementElement) {soundboard.applaudissementElement.click();soundboard.applaudissementElement.classList.add('active');}
-    if(event.key === soundboard.boucheElement) {soundboard.boucheElement.click();soundboard.boucheElement.classList.add('active');}
-    if(event.key === soundboard.hoquetElement) {soundboard.hoquetElement.click();soundboard.hoquetElement.classList.add('active');}
-    if(event.key === soundboard.annonceElement) {soundboard.annonceElement.click();soundboard.annonceElement.classList.add('active');}
-    if(event.key === soundboard.xylophoneElement) {soundboard.xylophoneElement.click();soundboard.xylophoneElement.classList.add('active');}
-    if(event.key === soundboard.tarzanElement) {soundboard.tarzanElement.click();soundboard.tarzanElement.classList.add('active');}
+    if(event.key === soundboard.kickElement) {soundboard.handleKickClick();soundboard.kickElement.classList.add('active');}
+    if(event.key === soundboard.hihatElement) {soundboard.handleHihatClick();soundboard.hihatElement.classList.add('active');}
+    if(event.key === soundboard.snareElement) {soundboard.handleSnareClick();soundboard.snareElement.classList.add('active');}
+    if(event.key === soundboard.wobbleElement) {soundboard.handleWobbleClick();soundboard.wobbleElement.classList.add('active');}
+    if(event.key === soundboard.vocalElement) {soundboard.handleFxClick();soundboard.vocalElement.classList.add('active');}
+    if(event.key === soundboard.scratchElement) {soundboard.handleScratchClick();soundboard.scratchElement.classList.add('active');}
+    if(event.key === soundboard.grenadeElement) {soundboard.handleGrenadeClick();soundboard.grenadeElement.classList.add('active');}
+    if(event.key === soundboard.violonElement) {soundboard.handleViolonClick();soundboard.violonElement.classList.add('active');}
+    if(event.key === soundboard.triangleElement) {soundboard.handleTriangleClick();soundboard.triangleElement.classList.add('active');}
+    if(event.key === soundboard.saxophoneElement) {soundboard.handleSaxophoneClick();soundboard.saxophoneElement.classList.add('active');}
+    if(event.key === soundboard.tambourElement) {soundboard.handleTambourClick();soundboard.tambourElement.classList.add('active');}
+    if(event.key === soundboard.clapElement) {soundboard.handleClapClick();soundboard.clapElement.classList.add('active');}
+    if(event.key === soundboard.fluteElement) {soundboard.handleFluteClick();soundboard.fluteElement.classList.add('active');}
+    if(event.key === soundboard.aigleElement) {soundboard.handleAigleClick();soundboard.aigleElement.classList.add('active');}
+    if(event.key === soundboard.rotElement) {soundboard.handleRotClick();soundboard.rotElement.classList.add('active');}
+    if(event.key === soundboard.sifflementElement) {soundboard.handleSifflementClick();soundboard.sifflementElement.classList.add('active');}
+    if(event.key === soundboard.cornemuseElement) {soundboard.handleCornemuseClick();soundboard.cornemuseElement.classList.add('active');}
+    if(event.key === soundboard.rythmeElement) {soundboard.handleRythmeClick();soundboard.rythmeElement.classList.add('active');}
+    if(event.key === soundboard.castagnetteElement) {soundboard.handleCastagnetteClick();soundboard.castagnetteElement.classList.add('active');}
+    if(event.key === soundboard.ukuleleElement) {soundboard.handleUkuleleClick();soundboard.ukuleleElement.classList.add('active');}
+    if(event.key === soundboard.alarmeElement) {soundboard.handleAlarmeClick();soundboard.alarmeElement.classList.add('active');}
+    if(event.key === soundboard.applaudissementElement) {soundboard.handleApplaudissementClick();soundboard.applaudissementElement.classList.add('active');}
+    if(event.key === soundboard.boucheElement) {soundboard.handleBoucheClick();soundboard.boucheElement.classList.add('active');}
+    if(event.key === soundboard.hoquetElement) {soundboard.handleHoquetClick();soundboard.hoquetElement.classList.add('active');}
+    if(event.key === soundboard.annonceElement) {soundboard.handleAnnonceClick();soundboard.annonceElement.classList.add('active');}
+    if(event.key === soundboard.xylophoneElement) {soundboard.handleXylophoneClick();soundboard.xylophoneElement.classList.add('active');}
+    if(event.key === soundboard.tarzanElement) {soundboard.handleTarzanClick();soundboard.tarzanElement.classList.add('active');}
   },
 
   /**
