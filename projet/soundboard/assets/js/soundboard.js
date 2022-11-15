@@ -390,6 +390,39 @@ const soundboard = {
     if(event.key === ' ') {soundboard.tarzanElement.click();soundboard.tarzanElement.classList.add('active');}
   },
 
+   /**
+  * Méthode permettant d'ajouter la class active à chaque pad lorsque le pavé tactile est enfoncé
+  */
+  handleTouchStart: function(event) {
+    if(event.key === soundboard.kickElement) {soundboard.kickElement.click();soundboard.kickElement.classList.add('active');}
+    if(event.key === soundboard.hihatElement) {soundboard.hihatElement.click();soundboard.hihatElement.classList.add('active');}
+    if(event.key === soundboard.snareElement) {soundboard.snareElement.click();soundboard.snareElement.classList.add('active');}
+    if(event.key === soundboard.wobbleElement) {soundboard.wobbleElement.click();soundboard.wobbleElement.classList.add('active');}
+    if(event.key === soundboard.vocalElement) {soundboard.vocalElement.click();soundboard.vocalElement.classList.add('active');}
+    if(event.key === soundboard.scratchElement) {soundboard.scratchElement.click();soundboard.scratchElement.classList.add('active');}
+    if(event.key === soundboard.grenadeElement) {soundboard.grenadeElement.click();soundboard.grenadeElement.classList.add('active');}
+    if(event.key === soundboard.violonElement) {soundboard.violonElement.click();soundboard.violonElement.classList.add('active');}
+    if(event.key === soundboard.triangleElement) {soundboard.triangleElement.click();soundboard.triangleElement.classList.add('active');}
+    if(event.key === soundboard.saxophoneElement) {soundboard.saxophoneElement.click();soundboard.saxophoneElement.classList.add('active');}
+    if(event.key === soundboard.tambourElement) {soundboard.tambourElement.click();soundboard.tambourElement.classList.add('active');}
+    if(event.key === soundboard.clapElement) {soundboard.clapElement.click();soundboard.clapElement.classList.add('active');}
+    if(event.key === soundboard.fluteElement) {soundboard.fluteElement.click();soundboard.fluteElement.classList.add('active');}
+    if(event.key === soundboard.aigleElement) {soundboard.aigleElement.click();soundboard.aigleElement.classList.add('active');}
+    if(event.key === soundboard.rotElement) {soundboard.rotElement.click();soundboard.rotElement.classList.add('active');}
+    if(event.key === soundboard.sifflementElement) {soundboard.sifflementElement.click();soundboard.sifflementElement.classList.add('active');}
+    if(event.key === soundboard.cornemuseElement) {soundboard.cornemuseElement.click();soundboard.cornemuseElement.classList.add('active');}
+    if(event.key === soundboard.rythmeElement) {soundboard.rythmeElement.click();soundboard.rythmeElement.classList.add('active');}
+    if(event.key === soundboard.castagnetteElement) {soundboard.castagnetteElement.click();soundboard.castagnetteElement.classList.add('active');}
+    if(event.key === soundboard.ukuleleElement) {soundboard.ukuleleElement.click();soundboard.ukuleleElement.classList.add('active');}
+    if(event.key === soundboard.alarmeElement) {soundboard.alarmeElement.click();soundboard.alarmeElement.classList.add('active');}
+    if(event.key === soundboard.applaudissementElement) {soundboard.applaudissementElement.click();soundboard.applaudissementElement.classList.add('active');}
+    if(event.key === soundboard.boucheElement) {soundboard.boucheElement.click();soundboard.boucheElement.classList.add('active');}
+    if(event.key === soundboard.hoquetElement) {soundboard.hoquetElement.click();soundboard.hoquetElement.classList.add('active');}
+    if(event.key === soundboard.annonceElement) {soundboard.annonceElement.click();soundboard.annonceElement.classList.add('active');}
+    if(event.key === soundboard.xylophoneElement) {soundboard.xylophoneElement.click();soundboard.xylophoneElement.classList.add('active');}
+    if(event.key === soundboard.tarzanElement) {soundboard.tarzanElement.click();soundboard.tarzanElement.classList.add('active');}
+  },
+
   /**
   * Méthode permettant de suprimmer la class active de chaque pad lorsque le touche est relaché
   */
@@ -421,6 +454,39 @@ const soundboard = {
     if(event.key === 'b') {soundboard.annonceElement.classList.remove('active');}
     if(event.key === 'n') {soundboard.xylophoneElement.classList.remove('active');}
     if(event.key === ' ') {soundboard.tarzanElement.classList.remove('active');}
+  },
+
+  /**
+  * Méthode permettant de suprimmer la class active de chaque pad lorsque le pavé tactile est relaché
+  */
+  handleTouchEnd: function(event) {
+    if(event.key === soundboard.kickElement) {soundboard.kickElement.classList.remove('active');}
+    if(event.key === soundboard.hihatElement) {soundboard.hihatElement.classList.remove('active');}
+    if(event.key === soundboard.snareElement) {soundboard.snareElement.classList.remove('active');}
+    if(event.key === soundboard.wobbleElement) {soundboard.wobbleElement.classList.remove('active');}
+    if(event.key === soundboard.vocalElement) {soundboard.vocalElement.classList.remove('active');}
+    if(event.key === soundboard.scratchElement) {soundboard.scratchElement.classList.remove('active');}
+    if(event.key === soundboard.grenadeElement) {soundboard.grenadeElement.classList.remove('active');}
+    if(event.key === soundboard.violonElement) {soundboard.violonElement.classList.remove('active');}
+    if(event.key === soundboard.triangleElement) {soundboard.triangleElement.classList.remove('active');}
+    if(event.key === soundboard.saxophoneElement) {soundboard.saxophoneElement.classList.remove('active');}
+    if(event.key === soundboard.tambourElement) {soundboard.tambourElement.classList.remove('active');}
+    if(event.key === soundboard.clapElement) {soundboard.clapElement.classList.remove('active');}
+    if(event.key === soundboard.fluteElement) {soundboard.fluteElement.classList.remove('active');}
+    if(event.key === soundboard.aigleElement) {soundboard.aigleElement.classList.remove('active');}
+    if(event.key === soundboard.rotElement) {soundboard.rotElement.classList.remove('active');}
+    if(event.key === soundboard.sifflementElement) {soundboard.sifflementElement.classList.remove('active');}
+    if(event.key === soundboard.cornemuseElement) {soundboard.cornemuseElement.classList.remove('active');}
+    if(event.key === soundboard.rythmeElement) {soundboard.rythmeElement.classList.remove('active');}
+    if(event.key === soundboard.castagnetteElement) {soundboard.castagnetteElement.classList.remove('active');}
+    if(event.key === soundboard.ukuleleElement) {soundboard.ukuleleElement.classList.remove('active');}
+    if(event.key === soundboard.alarmeElement) {soundboard.alarmeElement.classList.remove('active');}
+    if(event.key === soundboard.applaudissementElement) {soundboard.applaudissementElement.classList.remove('active');}
+    if(event.key === soundboard.boucheElement) {soundboard.boucheElement.classList.remove('active');}
+    if(event.key === soundboard.hoquetElement) {soundboard.hoquetElement.classList.remove('active');}
+    if(event.key === soundboard.annonceElement) {soundboard.annonceElement.classList.remove('active');}
+    if(event.key === soundboard.xylophoneElement) {soundboard.xylophoneElement.classList.remove('active');}
+    if(event.key === soundboard.tarzanElement) {soundboard.tarzanElement.classList.remove('active');}
   },
 
   /**
@@ -456,6 +522,7 @@ const soundboard = {
     soundboard.tarzanElement.addEventListener('click', soundboard.handleTarzanClick);
     document.addEventListener('keydown', soundboard.handleKeyboard);
     document.addEventListener('keyup', soundboard.handleUpKeyboard);
+    document.addEventListener('touchstart', soundboard.handleTouchStart);
+    document.addEventListener('touchend', soundboard.handleTouchEnd);
   },
-
 }

@@ -20,22 +20,25 @@ html, body {
 */
 
 html {
-  font: 1.25em/1.75 system-ui, sans-serif;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 body {
   color-scheme: dark;
   background-color: #0d1117;
   color: #c9d1d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+@media screen and (orientation: landscape) {
 /*
   Components
 */
 .container{
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
 }
 
 .pads {
@@ -75,7 +78,7 @@ body {
   aspect-ratio: 1;
   font-weight: 600;
   user-select: none;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin: 2px;
 }
 
@@ -97,4 +100,18 @@ p{
   background-color: #7ee787;
   color: #033a16;
   box-shadow: 0 0 2rem 0px #56d364;
+}
+
+.rotate{
+  display: none;
+}
+}
+
+@media screen and (orientation: portrait) {
+  .container{
+    display: none;
+  }
+  .rotate{
+    font-weight: 600;
+  }
 }
