@@ -78,33 +78,33 @@ const soundboard = {
    * les différents éléments pads
    */
   definePads: function() {
-    soundboard.kickElement            = document.querySelector('.pad-1');
-    soundboard.hihatElement           = document.querySelector('.pad-2');
-    soundboard.snareElement           = document.querySelector('.pad-3');
-    soundboard.wobbleElement          = document.querySelector('.pad-4');
-    soundboard.vocalElement           = document.querySelector('.pad-5');
-    soundboard.scratchElement         = document.querySelector('.pad-6');
-    soundboard.grenadeElement         = document.querySelector('.pad-7');
-    soundboard.violonElement          = document.querySelector('.pad-8');
-    soundboard.triangleElement        = document.querySelector('.pad-9');
-    soundboard.saxophoneElement       = document.querySelector('.pad-10');
-    soundboard.tambourElement         = document.querySelector('.pad-11');
-    soundboard.clapElement            = document.querySelector('.pad-12');
-    soundboard.fluteElement           = document.querySelector('.pad-13');
-    soundboard.aigleElement           = document.querySelector('.pad-14');
-    soundboard.rotElement             = document.querySelector('.pad-15');
-    soundboard.sifflementElement      = document.querySelector('.pad-16');
-    soundboard.cornemuseElement       = document.querySelector('.pad-17');
-    soundboard.rythmeElement          = document.querySelector('.pad-18');
-    soundboard.castagnetteElement     = document.querySelector('.pad-19');
-    soundboard.ukuleleElement         = document.querySelector('.pad-20');
-    soundboard.alarmeElement          = document.querySelector('.pad-21');
+    soundboard.kickElement = document.querySelector('.pad-1');
+    soundboard.hihatElement = document.querySelector('.pad-2');
+    soundboard.snareElement = document.querySelector('.pad-3');
+    soundboard.wobbleElement = document.querySelector('.pad-4');
+    soundboard.vocalElement = document.querySelector('.pad-5');
+    soundboard.scratchElement = document.querySelector('.pad-6');
+    soundboard.grenadeElement = document.querySelector('.pad-7');
+    soundboard.violonElement = document.querySelector('.pad-8');
+    soundboard.triangleElement = document.querySelector('.pad-9');
+    soundboard.saxophoneElement = document.querySelector('.pad-10');
+    soundboard.tambourElement = document.querySelector('.pad-11');
+    soundboard.clapElement = document.querySelector('.pad-12');
+    soundboard.fluteElement = document.querySelector('.pad-13');
+    soundboard.aigleElement = document.querySelector('.pad-14');
+    soundboard.rotElement = document.querySelector('.pad-15');
+    soundboard.sifflementElement = document.querySelector('.pad-16');
+    soundboard.cornemuseElement = document.querySelector('.pad-17');
+    soundboard.rythmeElement = document.querySelector('.pad-18');
+    soundboard.castagnetteElement = document.querySelector('.pad-19');
+    soundboard.ukuleleElement = document.querySelector('.pad-20');
+    soundboard.alarmeElement = document.querySelector('.pad-21');
     soundboard.applaudissementElement = document.querySelector('.pad-22');
-    soundboard.boucheElement          = document.querySelector('.pad-23');
-    soundboard.hoquetElement          = document.querySelector('.pad-24');
-    soundboard.annonceElement         = document.querySelector('.pad-25');
-    soundboard.xylophoneElement       = document.querySelector('.pad-26');
-    soundboard.tarzanElement          = document.querySelector('.pad-27');
+    soundboard.boucheElement = document.querySelector('.pad-23');
+    soundboard.hoquetElement = document.querySelector('.pad-24');
+    soundboard.annonceElement = document.querySelector('.pad-25');
+    soundboard.xylophoneElement = document.querySelector('.pad-26');
+    soundboard.tarzanElement = document.querySelector('.pad-27');
   },
 
   /**
@@ -125,7 +125,7 @@ const soundboard = {
     soundboard.tambourAudio = new Audio('assets/audio/tambour.opus');
     soundboard.clapAudio = new Audio('assets/audio/clap.opus');
     soundboard.fluteAudio = new Audio('assets/audio/flute.opus');
-    soundboard.aigleAudio = new Audio('assets/audio/aigle.opus');
+    soundboard.aigleAudio = new Audio('assets/audio/aigle.ogg');
     soundboard.rotAudio = new Audio('assets/audio/rot.opus');
     soundboard.sifflementAudio = new Audio('assets/audio/sifflement.opus');
     soundboard.cornemuseAudio = new Audio('assets/audio/cornemuse.opus');
@@ -390,6 +390,39 @@ const soundboard = {
     if(event.key === ' ') {soundboard.tarzanElement.click();soundboard.tarzanElement.classList.add('active');}
   },
 
+   /**
+  * Méthode permettant d'ajouter la class active à chaque pad lorsque le pavé tactile est enfoncé
+  */
+  handleTouchStart: function(event) {
+    if(event.key === soundboard.kickElement) {soundboard.handleKickClick();soundboard.kickElement.classList.add('active');}
+    if(event.key === soundboard.hihatElement) {soundboard.handleHihatClick();soundboard.hihatElement.classList.add('active');}
+    if(event.key === soundboard.snareElement) {soundboard.handleSnareClick();soundboard.snareElement.classList.add('active');}
+    if(event.key === soundboard.wobbleElement) {soundboard.handleWobbleClick();soundboard.wobbleElement.classList.add('active');}
+    if(event.key === soundboard.vocalElement) {soundboard.handleFxClick();soundboard.vocalElement.classList.add('active');}
+    if(event.key === soundboard.scratchElement) {soundboard.handleScratchClick();soundboard.scratchElement.classList.add('active');}
+    if(event.key === soundboard.grenadeElement) {soundboard.handleGrenadeClick();soundboard.grenadeElement.classList.add('active');}
+    if(event.key === soundboard.violonElement) {soundboard.handleViolonClick();soundboard.violonElement.classList.add('active');}
+    if(event.key === soundboard.triangleElement) {soundboard.handleTriangleClick();soundboard.triangleElement.classList.add('active');}
+    if(event.key === soundboard.saxophoneElement) {soundboard.handleSaxophoneClick();soundboard.saxophoneElement.classList.add('active');}
+    if(event.key === soundboard.tambourElement) {soundboard.handleTambourClick();soundboard.tambourElement.classList.add('active');}
+    if(event.key === soundboard.clapElement) {soundboard.handleClapClick();soundboard.clapElement.classList.add('active');}
+    if(event.key === soundboard.fluteElement) {soundboard.handleFluteClick();soundboard.fluteElement.classList.add('active');}
+    if(event.key === soundboard.aigleElement) {soundboard.handleAigleClick();soundboard.aigleElement.classList.add('active');}
+    if(event.key === soundboard.rotElement) {soundboard.handleRotClick();soundboard.rotElement.classList.add('active');}
+    if(event.key === soundboard.sifflementElement) {soundboard.handleSifflementClick();soundboard.sifflementElement.classList.add('active');}
+    if(event.key === soundboard.cornemuseElement) {soundboard.handleCornemuseClick();soundboard.cornemuseElement.classList.add('active');}
+    if(event.key === soundboard.rythmeElement) {soundboard.handleRythmeClick();soundboard.rythmeElement.classList.add('active');}
+    if(event.key === soundboard.castagnetteElement) {soundboard.handleCastagnetteClick();soundboard.castagnetteElement.classList.add('active');}
+    if(event.key === soundboard.ukuleleElement) {soundboard.handleUkuleleClick();soundboard.ukuleleElement.classList.add('active');}
+    if(event.key === soundboard.alarmeElement) {soundboard.handleAlarmeClick();soundboard.alarmeElement.classList.add('active');}
+    if(event.key === soundboard.applaudissementElement) {soundboard.handleApplaudissementClick();soundboard.applaudissementElement.classList.add('active');}
+    if(event.key === soundboard.boucheElement) {soundboard.handleBoucheClick();soundboard.boucheElement.classList.add('active');}
+    if(event.key === soundboard.hoquetElement) {soundboard.handleHoquetClick();soundboard.hoquetElement.classList.add('active');}
+    if(event.key === soundboard.annonceElement) {soundboard.handleAnnonceClick();soundboard.annonceElement.classList.add('active');}
+    if(event.key === soundboard.xylophoneElement) {soundboard.handleXylophoneClick();soundboard.xylophoneElement.classList.add('active');}
+    if(event.key === soundboard.tarzanElement) {soundboard.handleTarzanClick();soundboard.tarzanElement.classList.add('active');}
+  },
+
   /**
   * Méthode permettant de suprimmer la class active de chaque pad lorsque le touche est relaché
   */
@@ -421,6 +454,39 @@ const soundboard = {
     if(event.key === 'b') {soundboard.annonceElement.classList.remove('active');}
     if(event.key === 'n') {soundboard.xylophoneElement.classList.remove('active');}
     if(event.key === ' ') {soundboard.tarzanElement.classList.remove('active');}
+  },
+
+  /**
+  * Méthode permettant de suprimmer la class active de chaque pad lorsque le pavé tactile est relaché
+  */
+  handleTouchEnd: function(event) {
+    if(event.key === soundboard.kickElement) {soundboard.kickElement.classList.remove('active');}
+    if(event.key === soundboard.hihatElement) {soundboard.hihatElement.classList.remove('active');}
+    if(event.key === soundboard.snareElement) {soundboard.snareElement.classList.remove('active');}
+    if(event.key === soundboard.wobbleElement) {soundboard.wobbleElement.classList.remove('active');}
+    if(event.key === soundboard.vocalElement) {soundboard.vocalElement.classList.remove('active');}
+    if(event.key === soundboard.scratchElement) {soundboard.scratchElement.classList.remove('active');}
+    if(event.key === soundboard.grenadeElement) {soundboard.grenadeElement.classList.remove('active');}
+    if(event.key === soundboard.violonElement) {soundboard.violonElement.classList.remove('active');}
+    if(event.key === soundboard.triangleElement) {soundboard.triangleElement.classList.remove('active');}
+    if(event.key === soundboard.saxophoneElement) {soundboard.saxophoneElement.classList.remove('active');}
+    if(event.key === soundboard.tambourElement) {soundboard.tambourElement.classList.remove('active');}
+    if(event.key === soundboard.clapElement) {soundboard.clapElement.classList.remove('active');}
+    if(event.key === soundboard.fluteElement) {soundboard.fluteElement.classList.remove('active');}
+    if(event.key === soundboard.aigleElement) {soundboard.aigleElement.classList.remove('active');}
+    if(event.key === soundboard.rotElement) {soundboard.rotElement.classList.remove('active');}
+    if(event.key === soundboard.sifflementElement) {soundboard.sifflementElement.classList.remove('active');}
+    if(event.key === soundboard.cornemuseElement) {soundboard.cornemuseElement.classList.remove('active');}
+    if(event.key === soundboard.rythmeElement) {soundboard.rythmeElement.classList.remove('active');}
+    if(event.key === soundboard.castagnetteElement) {soundboard.castagnetteElement.classList.remove('active');}
+    if(event.key === soundboard.ukuleleElement) {soundboard.ukuleleElement.classList.remove('active');}
+    if(event.key === soundboard.alarmeElement) {soundboard.alarmeElement.classList.remove('active');}
+    if(event.key === soundboard.applaudissementElement) {soundboard.applaudissementElement.classList.remove('active');}
+    if(event.key === soundboard.boucheElement) {soundboard.boucheElement.classList.remove('active');}
+    if(event.key === soundboard.hoquetElement) {soundboard.hoquetElement.classList.remove('active');}
+    if(event.key === soundboard.annonceElement) {soundboard.annonceElement.classList.remove('active');}
+    if(event.key === soundboard.xylophoneElement) {soundboard.xylophoneElement.classList.remove('active');}
+    if(event.key === soundboard.tarzanElement) {soundboard.tarzanElement.classList.remove('active');}
   },
 
   /**
@@ -456,5 +522,7 @@ const soundboard = {
     soundboard.tarzanElement.addEventListener('click', soundboard.handleTarzanClick);
     document.addEventListener('keydown', soundboard.handleKeyboard);
     document.addEventListener('keyup', soundboard.handleUpKeyboard);
+    document.addEventListener('touchstart', soundboard.handleTouchStart);
+    document.addEventListener('touchend', soundboard.handleTouchEnd);
   },
 }
