@@ -112,33 +112,33 @@ const soundboard = {
    * les différents samples audio à jouer
    */
   preloadSamples: function() {
-    soundboard.kickAudio = new Audio('assets/audio/kick.opus');
-    soundboard.hihatAudio = new Audio('assets/audio/hihat.opus');
-    soundboard.snareAudio = new Audio('assets/audio/snare.opus');
-    soundboard.wobbleAudio = new Audio('assets/audio/wobble.opus');
-    soundboard.vocalAudio = new Audio('assets/audio/voice.opus');
-    soundboard.scratchAudio = new Audio('assets/audio/scratch.opus');
-    soundboard.grenadeAudio = new Audio('assets/audio/grenade.opus');
-    soundboard.violonAudio = new Audio('assets/audio/violon.opus');
-    soundboard.triangleAudio = new Audio('assets/audio/triangle.opus');
-    soundboard.saxophoneAudio = new Audio('assets/audio/saxophone.opus');
-    soundboard.tambourAudio = new Audio('assets/audio/tambour.opus');
-    soundboard.clapAudio = new Audio('assets/audio/clap.opus');
-    soundboard.fluteAudio = new Audio('assets/audio/flute.opus');
+    soundboard.kickAudio = new Audio('assets/audio/kick.mp3');
+    soundboard.hihatAudio = new Audio('assets/audio/hihat.mp3');
+    soundboard.snareAudio = new Audio('assets/audio/snare.mp3');
+    soundboard.wobbleAudio = new Audio('assets/audio/wobble.mp3');
+    soundboard.vocalAudio = new Audio('assets/audio/voice.mp3');
+    soundboard.scratchAudio = new Audio('assets/audio/scratch.mp3');
+    soundboard.grenadeAudio = new Audio('assets/audio/grenade.mp3');
+    soundboard.violonAudio = new Audio('assets/audio/violon.mp3');
+    soundboard.triangleAudio = new Audio('assets/audio/triangle.mp3');
+    soundboard.saxophoneAudio = new Audio('assets/audio/saxophone.mp3');
+    soundboard.tambourAudio = new Audio('assets/audio/tambour.mp3');
+    soundboard.clapAudio = new Audio('assets/audio/clap.mp3');
+    soundboard.fluteAudio = new Audio('assets/audio/flute.mp3');
     soundboard.aigleAudio = new Audio('assets/audio/aigle.mp3');
-    soundboard.rotAudio = new Audio('assets/audio/rot.opus');
-    soundboard.sifflementAudio = new Audio('assets/audio/sifflement.opus');
-    soundboard.cornemuseAudio = new Audio('assets/audio/cornemuse.opus');
-    soundboard.rythmeAudio = new Audio('assets/audio/rythme.opus');
-    soundboard.castagnetteAudio = new Audio('assets/audio/castagnette.opus');
-    soundboard.ukuleleAudio = new Audio('assets/audio/ukulele.opus');
-    soundboard.alarmeAudio = new Audio('assets/audio/alarme.opus');
-    soundboard.applaudissementAudio = new Audio('assets/audio/applaudissement.opus');
-    soundboard.boucheAudio = new Audio('assets/audio/bouche.opus');
-    soundboard.hoquetAudio = new Audio('assets/audio/hoquet.opus');
-    soundboard.annonceAudio = new Audio('assets/audio/annonce.opus');
-    soundboard.xylophoneAudio = new Audio('assets/audio/xylophone.opus');
-    soundboard.tarzanAudio = new Audio('assets/audio/tarzan.opus');
+    soundboard.rotAudio = new Audio('assets/audio/rot.mp3');
+    soundboard.sifflementAudio = new Audio('assets/audio/sifflement.mp3');
+    soundboard.cornemuseAudio = new Audio('assets/audio/cornemuse.mp3');
+    soundboard.rythmeAudio = new Audio('assets/audio/rythme.mp3');
+    soundboard.castagnetteAudio = new Audio('assets/audio/castagnette.mp3');
+    soundboard.ukuleleAudio = new Audio('assets/audio/ukulele.mp3');
+    soundboard.alarmeAudio = new Audio('assets/audio/alarme.mp3');
+    soundboard.applaudissementAudio = new Audio('assets/audio/applaudissement.mp3');
+    soundboard.boucheAudio = new Audio('assets/audio/bouche.mp3');
+    soundboard.hoquetAudio = new Audio('assets/audio/hoquet.mp3');
+    soundboard.annonceAudio = new Audio('assets/audio/annonce.mp3');
+    soundboard.xylophoneAudio = new Audio('assets/audio/xylophone.mp3');
+    soundboard.tarzanAudio = new Audio('assets/audio/tarzan.mp3');
   },
 
   /**

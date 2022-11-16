@@ -205,9 +205,15 @@ ul{
     margin: 0;
 }
 li{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 0.5rem;
 }
+
+.line-school{
+    justify-content: center;
+}
+
 h3{
     margin: 0.5rem;
 }
@@ -237,11 +243,6 @@ footer{
 
 img.screen-capture{
     display: none;
-}
-
-.link-project{
-    margin: -15px 0;
-    display: block;
 }
 
 .pencil{
@@ -285,18 +286,8 @@ body{
         margin-top: 0;
     }
 
-    .link-project{
-        display: none;
-    }
 }
 
-@media (min-width:1001px)
-{
-    .link-project{
-
-        display: none;
-    }
-}
 
 /* ---------- Project ---------- */
 
@@ -312,5 +303,12 @@ img.screen-capture{
 footer li{
     justify-content: center;
 }
+
+
+.link-project a {
+    margin:  0;
+  
+}
+
 
 
