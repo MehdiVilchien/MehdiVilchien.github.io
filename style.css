@@ -8,6 +8,23 @@
     --lightgreen: #afddcb;
     --green: #69af96;
     --darkgreen: #254137;
+    --htmlbg: #f0902a;
+    --htmltitle: #ed4c2c;
+    --cssbg: #28a9e0;
+    --csstitle: #0171bb;
+    --jsbg: #ead41c;
+    --jstitle: #d78e2e;
+    --phpbg: #848bb4;
+    --phptitle: #222035;
+    --bootstrapbg: #7611ed;
+    --bootstraptitle: #543979;
+    --symfonybg: #000000;
+    --symfonytitle: #000000;
+    --sqlbg: #006f88;
+    --sqltitle: #e68a10;
+    --bgpage: #ffffff;
+
+
 }
 
 body{
