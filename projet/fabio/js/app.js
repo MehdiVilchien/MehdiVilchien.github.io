@@ -16,6 +16,7 @@ const app = {
         //destinations.init();
 
         reviews.init();
+        soundboard.init();
 
     }
 
