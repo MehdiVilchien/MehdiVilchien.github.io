@@ -59,7 +59,7 @@ const theme = {
      * Méthode appelée par l'écouteur des clics sur les boutons de changement de thème de couleur
      * @param {Event} event 
      */
-    handleColorButtonClick: function(event) {
+   /*  handleColorButtonClick: function(event) {
 
         // On récupère l'élément sur lequel on a cliqué
         const clickedButton = event.currentTarget;
@@ -72,13 +72,13 @@ const theme = {
 
         // On sauvegarde dans localStorage le thème choisi
         localStorage.setItem('colorTheme', colorTheme);
-    },  
+    },   */
 
     /**
      * Méthode permettant de modifier le thème de couleur de la page
      * @param {String} themeName Nom du thème à appliquer (theme-red,theme-green, theme-blue)
      */
-    changeColorTheme: function(themeName) {
+  /*   changeColorTheme: function(themeName) {
 
         // On commence par retirer toutes les classes liées à un thème de couleur
         document.body.classList.remove('theme-green', 'theme-red', 'theme-blue');
@@ -89,7 +89,7 @@ const theme = {
         
 
 
-    },
+    }, */
 
     /**
      * Sauvegarde dans le localStorage l'info du mode Dark actuelle.

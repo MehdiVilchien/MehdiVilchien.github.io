@@ -24,14 +24,16 @@ html {
   --color-alt: var(--theme-green-alt);
 
 
-  --border-normal: 1px solid rgba(0, 0, 0, .2);
+  --border-normal: 1px solid rgba(234, 0, 255, 0.2);
   --color-bg: white;
-  --color-opacity: rgba(0, 0, 0, .1);
+  --color-opacity: rgba(247, 0, 255, 0.1);
 }
 
 body {
   font-family: 'Noto Sans', sans-serif;
   transition: background-color .3s;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+
 }
 
 a:hover {
@@ -104,6 +106,7 @@ video{
 .logo__title{
   color: #F0F;
   text-shadow: #F0F 1px 0 10px;
+  
 }
 
 .menu {
@@ -146,7 +149,7 @@ video{
 
 .submenu {
   text-align: center;
-  color: #666;
+  color: #F0F;
   font-size: 0.9em;
 }
 
@@ -175,6 +178,9 @@ video{
   padding: 1rem;
   margin: 1rem 0;
   background-color: var(--color-opacity);
+  box-shadow: 0 2px 15px 10px rgba(255, 0, 255, 0.2);
+  border: 4px #F0F solid;
+  border-radius: 10px;
 }
 
 .segment__title {
@@ -332,12 +338,16 @@ video{
 
 /* bottom */
 .footer {
-  background-color: #222;
+  background-color: #F0F;
   color: #aaa;
   text-align: center;
   padding: 3rem 1rem;
 }
 
+footer .container p{
+  color: black;
+  font-size: 2rem;
+}
 /* dark mode */
 .theme-dark {
   color: white;
