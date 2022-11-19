@@ -350,11 +350,23 @@ footer .container p{
 }
 /* dark mode */
 .theme-dark {
-  color: white;
-  background-color: rgb(22, 22, 22);
-  --border-normal: 1px solid rgba(255, 255, 255, .2);
-  --color-bg: rgb(15, 15, 15);
-  --color-opacity: rgba(255, 255, 255, .1);
+    background: linear-gradient(-45deg, #ff00f2, #f5a9de, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+    --border-normal: 1px solid rgba(255, 255, 255, .2);
+    --color-bg: rgb(15, 15, 15);
+    --color-opacity: rgba(255, 255, 255, .1);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .theme-green {

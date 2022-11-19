@@ -129,15 +129,7 @@ const theme = {
             theme.toggleDark();
         }
 
-        // On récupère dans localStorage le thème de couleur s'il existe
-        const colorTheme = localStorage.getItem('colorTheme');
-
-        if(colorTheme) {
-
-            // On appelle la méthode chargée d'appliquer un thème en lui passant le nom de celui-ci (qui était stocké en localstorage)
-            theme.changeColorTheme(colorTheme);
-
-        }
+       
     }
 
 }
