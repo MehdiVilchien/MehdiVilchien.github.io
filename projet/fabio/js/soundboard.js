@@ -58,11 +58,11 @@ const soundboard = {
    * les différents samples audio à jouer
    */
   preloadSamples: function() {
-    soundboard.junoAudio = new Audio('https://www.cjoint.com/doc/20_08/JHtsIUsoTet_francois-juno-la-chanson-de-kiki.mp3');
+    soundboard.junoAudio = new Audio('audio/juno.mp3');
     soundboard.daveAudio = new Audio('audio/dave.mp3');
     soundboard.abbaAudio = new Audio('audio/abba.mp3');
-    soundboard.lepersAudio = new Audio('http://gwendou.free.fr/MP3/07-Deretourdevacances.mp3');
-    soundboard.dassinAudio = new Audio('https://www.cjoint.com/doc/21_03/KCxcmHFoKLR_Joe-Dassin-Siffler-sur-la-colline.mp3');
+    soundboard.lepersAudio = new Audio('audio/lepers.mp3');
+    soundboard.dassinAudio = new Audio('audio/dassin.mp3');
   },
 
   /**
