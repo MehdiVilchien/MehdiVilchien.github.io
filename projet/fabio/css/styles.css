@@ -51,6 +51,7 @@ video{
   width: 100%;
   border: 4px #F0F solid;
   border-radius: 20px;
+  box-shadow: 0 2px 15px 10px rgb(255 0 255 / 20%);
 }
 
 .container {
@@ -105,6 +106,7 @@ video{
   margin-right: 0.5rem;
   border-radius: 50%;
   border: 2px #F0F solid;
+  box-shadow: 0 2px 15px 10px rgb(255 0 255 / 20%);
 }
 
 .logo__title{
@@ -154,11 +156,12 @@ video{
 .submenu {
   text-align: center;
   color: #F0F;
-  font-size: 0.9em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .submenu__item {
-  padding: 1rem 0.5rem 0.1rem;
+  padding: 0.5rem 0.5rem;
   display: inline-block;
  
 }
@@ -172,8 +175,12 @@ video{
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-  border: 1px #F0F solid;
+  border: 4px #F0F solid;
   width: 8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+ font-weight: normal;
+ box-shadow: 0 2px 15px 10px rgb(255 0 255 / 20%);
 }
 
 .svg{
@@ -251,6 +258,9 @@ video{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 4px #F0F solid;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px 10px rgb(255 0 255 / 20%);
 }
 
 .slider__img {
@@ -262,6 +272,7 @@ video{
   object-fit: cover;
   opacity: 0;
   transition: opacity .3s;
+  border-radius: 20px;
 }
 
 .slider__img--current {
