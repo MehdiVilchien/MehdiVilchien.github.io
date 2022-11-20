@@ -104,6 +104,7 @@ video{
 .logo__image {
   margin-right: 0.5rem;
   border-radius: 50%;
+  border: 2px #F0F solid;
 }
 
 .logo__title{
@@ -157,9 +158,26 @@ video{
 }
 
 .submenu__item {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem 0.1rem;
   display: inline-block;
  
+}
+.playlist{
+  display: flex;
+  justify-content: center;
+}
+
+.artiste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  border: 1px #F0F solid;
+  width: 8rem;
+}
+
+.svg{
+  width: 1rem;
 }
 
 .submenu__item--current {
@@ -342,15 +360,16 @@ video{
 /* bottom */
 .footer {
   background-color: #F0F;
-  color: #aaa;
+  color: black;
   text-align: center;
   padding: 3rem 1rem;
 }
 
 footer .container p{
-  color: black;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
+
 /* dark mode */
 .theme-dark {
     background: linear-gradient(-45deg, #ff00f2, #f5a9de, #ffffff);

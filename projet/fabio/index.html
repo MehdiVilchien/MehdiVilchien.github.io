@@ -22,7 +22,7 @@
         <div class="container">
           <div class="header__flex">
             <a class="logo" target="_blank" href="./img/23.gif">
-              <img class="logo__image" src="img/23.gif" alt="">
+              <img class="logo__image" src="img/fabyoda.gif" alt="">
               <span class="logo__title">O'mon Fabi'O</span>
             </a>
             <div class="menu">
@@ -30,7 +30,7 @@
               <a class="menu__item" target="_blank" href="./img/21.png"><i class="icon-heart"></i> Le hacker</a>
               <a class="menu__item" target="_blank" href="./img/22.png"><i class="icon-heart"></i> Le dav</a>
               <a class="menu__item" target="_blank" href="./img/25.png"><i class="icon-heart"></i> O'pirate</a>
-              <a class="menu__item" target="_blank" href="./img/24.png"><i class="icon-heart"></i> Fabyoda</a>
+              <a class="menu__item" target="_blank" href="./img/fabyoda.png"><i class="icon-heart"></i> Fabyoda</a>
               <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème"><i class="icon-moon"></i></button>
               <div class="menu__color-switcher">
              
@@ -42,12 +42,44 @@
       <div class="header__part">
         <div class="container">
           <div class="submenu">
-            <span class="submenu__item" style="text-decoration: #F0F wavy underline;">Top playlist :</span>
-            <a class="submenu__item juno"><img src="./img/play.svg" width="12rem" alt="play"> François Juno</a>
-            <a class="submenu__item dave"><img src="./img/play.svg" width="12rem" alt="play"> Dave</a>
-            <a class="submenu__item abba"><img src="./img/play.svg" width="12rem" alt="play"> ABBA</a>
-            <a class="submenu__item lepers"><img src="./img/play.svg" width="12rem" alt="play"> Julien Lepers</a>
-            <a class="submenu__item dassin"><img src="./img/play.svg" width="12rem" alt="play"> Joe Dassin</a>
+            <span class="submenu__item" style="text-decoration: #F0F underline;">Top playlist :</span>
+            <div class="playlist">
+              <div class="artiste">
+                <span class="submenu__item juno">François Juno</span>
+                <div class="player">
+                  <a><img src="./img/play.svg" class="play-juno svg" width="12rem" alt="play"></a>
+                  <a><img src="./img/pause.svg" class="pause-juno svg" width="12rem" alt="pause"></a>
+                </div>
+              </div>
+              <div class="artiste">
+                <span class="submenu__item dave">Dave</span>
+                <div class="player">
+                  <a><img src="./img/play.svg" class="play-dave svg" width="12rem" alt="play"></a>
+                  <a><img src="./img/pause.svg" class="pause-dave svg" width="12rem" alt="pause"></a>
+                </div>
+              </div> 
+              <div class="artiste">
+                <span class="submenu__item abba">ABBA</span>
+                <div class="player">
+                  <a><img src="./img/play.svg" class="play-abba svg" width="12rem" alt="play"></a>
+                  <a><img src="./img/pause.svg" class="pause-abba svg" width="12rem" alt="pause"></a>
+                </div>
+              </div>
+              <div class="artiste">
+                <span class="submenu__item lepers">Julien Lepers</span>
+                <div class="player">
+                  <a><img src="./img/play.svg" class="play-lepers svg" width="12rem" alt="play"></a>
+                  <a><img src="./img/pause.svg" class="pause-lepers svg" width="12rem" alt="pause"></a>
+                </div> 
+              </div>
+              <div class="artiste">
+                <span class="submenu__item dassin">Joe Dassin</span>
+                <div class="player">
+                  <a><img src="./img/play.svg" class="play-dassin svg" width="12rem" alt="play"></a>
+                  <a><img src="./img/pause.svg" class="pause-dassin svg" width="12rem" alt="pause"></a>
+                </div>
+              </div>   
+            </div>
           </div>
         </div>
       </div>
@@ -234,6 +266,7 @@
     <div class="container">
       <p>Toute ressemblance avec un formateur d'une école en téléprésentiel est purement fortuite.</p>
     </div>
+    <p class="credit">Promo Jupiter | pas tous droits réservés</p>
   </footer>
   <script src="js/messages.js"></script>
   <script src="js/destinations.js"></script>

@@ -4,11 +4,17 @@ const soundboard = {
    * Propriétés liées au DOM
    * les valeurs appropriées seront données par la méthode "definePads"
    */
-  junoElement: null,
-  daveElement: null,
-  abbaElement: null,
-  lepersElement: null,
-  dassinElement: null,
+  playjunoElement: null,
+  playdaveElement: null,
+  playabbaElement: null,
+  playlepersElement: null,
+  playdassinElement: null,
+
+  pausejunoElement: null,
+  pausedaveElement: null,
+  pauseabbaElement: null,
+  pauselepersElement: null,
+  pausedassinElement: null,
  
   /**
    * Propriétés liées à l'Audio
@@ -34,11 +40,17 @@ const soundboard = {
    * les différents éléments pads
    */
   definePads: function() {
-    soundboard.junoElement = document.querySelector('.juno');
-    soundboard.daveElement = document.querySelector('.dave');
-    soundboard.abbaElement = document.querySelector('.abba');
-    soundboard.lepersElement = document.querySelector('.lepers');
-    soundboard.dassinElement = document.querySelector('.dassin');
+    soundboard.playjunoElement = document.querySelector('.play-juno');
+    soundboard.playdaveElement = document.querySelector('.play-dave');
+    soundboard.playabbaElement = document.querySelector('.play-abba');
+    soundboard.playlepersElement = document.querySelector('.play-lepers');
+    soundboard.playdassinElement = document.querySelector('.play-dassin');
+
+    soundboard.pausejunoElement = document.querySelector('.pause-juno');
+    soundboard.pausedaveElement = document.querySelector('.pause-dave');
+    soundboard.pauseabbaElement = document.querySelector('.pause-abba');
+    soundboard.pauselepersElement = document.querySelector('.pause-lepers');
+    soundboard.pausedassinElement = document.querySelector('.pause-dassin');
   },
 
   /**
@@ -57,9 +69,12 @@ const soundboard = {
    * Méthode/Handler exécuté lorsque le pad "juno" est pressé
    */
   handleJunoClick: function() {
-    console.log('click');
     soundboard.junoAudio.currentTime = 0;
     soundboard.junoAudio.play();
+  },
+
+  handlePauseJunoClick: function() {
+    soundboard.junoAudio.pause();
   },
 
   /**
@@ -70,12 +85,20 @@ const soundboard = {
     soundboard.daveAudio.play();
   },
 
+  handlePauseDaveClick: function() {
+    soundboard.daveAudio.pause();
+  },
+
   /**
    * Méthode/Handler exécuté lorsque le pad "abba" est appuyé
    */
   handleAbbaClick: function() {
     soundboard.abbaAudio.currentTime = 0;
     soundboard.abbaAudio.play();
+  },
+
+  handlePauseAbbaClick: function() {
+    soundboard.abbaAudio.pause();
   },
 
   /**
@@ -86,6 +109,10 @@ const soundboard = {
     soundboard.lepersAudio.play();
   },
 
+  handlePauseLepersClick: function() {
+    soundboard.lepersAudio.pause();
+  },
+
   /**
    * Méthode/Handler exécuté lorsque le pad "dassin" est appuyé
    */
@@ -94,15 +121,25 @@ const soundboard = {
     soundboard.dassinAudio.play();
   },
 
+  handlePauseDassinClick: function() {
+    soundboard.dassinAudio.pause();
+  },
+
   /**
    * Méthode permettant d'ajouter un écouteur d'évènement par pad
    */
   attachEvents: function() {
-    soundboard.junoElement.addEventListener('click', soundboard.handleJunoClick);
-    soundboard.daveElement.addEventListener('click', soundboard.handleDaveClick);
-    soundboard.abbaElement.addEventListener('click', soundboard.handleAbbaClick);
-    soundboard.lepersElement.addEventListener('click', soundboard.handleLepersClick);
-    soundboard.dassinElement.addEventListener('click', soundboard.handleDassinClick);
+    soundboard.playjunoElement.addEventListener('click', soundboard.handleJunoClick);
+    soundboard.playdaveElement.addEventListener('click', soundboard.handleDaveClick);
+    soundboard.playabbaElement.addEventListener('click', soundboard.handleAbbaClick);
+    soundboard.playlepersElement.addEventListener('click', soundboard.handleLepersClick);
+    soundboard.playdassinElement.addEventListener('click', soundboard.handleDassinClick);
+
+    soundboard.pausejunoElement.addEventListener('click', soundboard.handlePauseJunoClick);
+    soundboard.pausedaveElement.addEventListener('click', soundboard.handlePauseDaveClick);
+    soundboard.pauseabbaElement.addEventListener('click', soundboard.handlePauseAbbaClick);
+    soundboard.pauselepersElement.addEventListener('click', soundboard.handlePauseLepersClick);
+    soundboard.pausedassinElement.addEventListener('click', soundboard.handlePauseDassinClick);
 
   },
 }
