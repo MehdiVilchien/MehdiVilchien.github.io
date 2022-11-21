@@ -115,6 +115,7 @@ const slider = {
             '7.png',
             '8.png',
             '9.png',
+            '27.png',
         ];
     
         // On sélectionne l'élément qui va recevoir l'image (on le fait à l'extérieur de la boucle pour éviter d'avoir à le sélectionner autant de fois qu'il ya d'images)
